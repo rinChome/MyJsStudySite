@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jQuery1.css">
+</head>
+<body>
+
+  <div class="sss">
+    <table>
+      <tr><td>aaaa</td></tr>
+      <tr><td>bbbb</td></tr>
+      <tr><td>cccc</td></tr>
+      <tr><td>dddd</td></tr>
+    </table>
+  </div>
+<div>
+  上記、３番目の文字を赤にして、
+  ddddの下にもう1個「TR追加という文字を追加」
+  <xmp>
+    $(".sss").find("tr:eq(2)").addClass("ssccolor");
+  $(".sss").find("tr:eq(3)").after("<tr><td>TR追加</td></tr>");
+  </xmp>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/jQuery1.js"></script>
+</body>
+</html>
