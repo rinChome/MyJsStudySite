@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <select id="select-products">
+    <option value="none">なし</option>
+    <option value="chair" selected>いす</option>
+    <option value="desk">つくえ</option>
+    <option value="desk2">つくえ2</option>
+  </select>
+
+  <button value="押下して選択データ(value値)取得" onclick="getData()" >押下して選択データ取得</button>
+
+<br><br>
+実際コード↓↓
+<xmp>
+  "use strict";
+
+function getData() {
+  var product = '';
+  var selectData = product = document.getElementById("select-products");
+  product = selectData.value;
+  console.log(product);
+
+}
+</xmp>
+
+<script src="js/js1.js"></script>
+</body>
+</html>

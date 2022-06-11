@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+   p:not(.sample){
+     color: red;
+   }
+  </style>
+</head>
+<body>
+  <p>redになる</p>
+  <p class="sample">redにならない</p>
+  aiueo
+  <script>
+    var num1 = new Number(100);
+    var num2 = new Number(100);
+
+    var str1 = new String("100");
+    var str2 = new String("200");
+
+    console.log(num1 == num2);//falseになる
+    console.log(num1 == str1);//falseになる
+    console.log(str1 == str2);//falseになる
+    console.log(num1 == 100);//trueになる
+    console.log(str1 == 100);//trueになる
+    </script>
+</body>
+</html>
